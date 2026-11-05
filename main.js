@@ -21,14 +21,16 @@ const css = `
   #ribbon button,
   button#ribbon {
     border-radius: 1rem !important;
-    transform:scale(1.2);
+    transform:scale(1);
     transition:all 0.3s;
     z-index:auto;
     
   }
   html body #ribbon button:hover {
-    transform:scale(1.06);
+    transform:scale(1.15);
     z-index:2000;
+    background: rgba(230,230,230,0.4);
+    backdrop-filter:blur(4px);
   }
 `;
 
