@@ -13,10 +13,6 @@ const css = `
     
   }
 
-  .pmd-pane-chip, .pmd-pane-body, .pmd-pane-footer {
-box-shadow: 0px 0px 21px 4px rgba(0,0,0,0.82);
-  }
-
   /* Chip header styling */
   .pmd-pane-chip, .pmd-pane-footer {
     border-radius: 1rem 1rem 0 0 !important;
