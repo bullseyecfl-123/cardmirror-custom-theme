@@ -22,6 +22,25 @@ const css = `
   html body button#ribbon {
     border-radius: 1rem !important;
   }
+  /* Targeted navbar class */
+  #navbar, nav, .navbar {
+    position: relative !important;
+    padding-bottom: 24px !important; /* Extra room for the wreath line */
+  }
+
+  /* Wreath border using a positioned pseudo-element */
+  #navbar::after, nav::after, .navbar::after {
+    content: "" !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 24px !important;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="24" viewBox="0 0 60 24"><path fill="none" stroke="%232ecc71" stroke-width="2" d="M0,12 Q15,4 30,12 T60,12"/><circle cx="15" cy="8" r="3" fill="%2327ae60"/><circle cx="45" cy="16" r="3" fill="%2327ae60"/><path d="M12,8 Q15,4 18,7 Q15,10 12,8 Z" fill="%232ecc71"/><path d="M42,16 Q45,12 48,15 Q45,18 42,16 Z" fill="%232ecc71"/></svg>') !important;
+    background-repeat: repeat-x !important;
+    background-size: contain !important;
+    pointer-events: none !important;
+  }
 `;
 
 const styleElement = document.createElement('style');
