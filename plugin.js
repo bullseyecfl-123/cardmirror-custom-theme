@@ -14,8 +14,12 @@ const css = `
   }
 
   /* Chip header styling */
-  .pmd-pane-chip, .pmd-pane-footer {
+  .pmd-pane-chip {
     border-radius: 1rem 1rem 0 0 !important;
+    padding: 1rem !important;
+  }
+  .pmd-pane-footer {
+    border-radius: 0 0 1rem 1rem !important;
     padding: 1rem !important;
   }
 
