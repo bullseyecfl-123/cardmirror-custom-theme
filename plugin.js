@@ -10,6 +10,7 @@ const css = `
   html body .pmd-pane {
     padding: 1.75rem !important;
     background:none;
+    box-shadow: 0px 0px 21px 4px rgba(0,0,0,0.42);
   }
 
   /* Chip header styling */
