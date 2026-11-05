@@ -16,7 +16,7 @@ const css = `
   /* Chip header styling */
   html body .pmd-pane-chip {
     border-radius: 1rem 1rem 0 0 !important;
-    padding: 0.75rem !important;
+    padding: 1rem !important;
   }
 
   /* Ribbon button overrides */
