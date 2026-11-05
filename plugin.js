@@ -10,7 +10,7 @@ const css = `
   html body .pmd-pane {
     padding: 1.75rem !important;
     background:none;
-    box-shadow: 0px 0px 21px 4px rgba(0,0,0,0.42);
+    box-shadow: 0px 0px 21px 4px rgba(0,0,0,0.82);
   }
 
   /* Chip header styling */
@@ -49,6 +49,15 @@ bottom: 1.75rem !important;
 }
 #status-bar {
   padding: 1rem .75rem !important;
+}
+.pmd-home-screen {
+    background: linear-gradient(0deg, black, rgb(0, 0, 85));
+}
+.pmd-home-title {
+font-size:3rem;
+}
+.pmd-home-tagline {
+color:white;
 }
 `;
 
