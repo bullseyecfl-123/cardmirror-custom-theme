@@ -29,7 +29,6 @@ const css = `
   html body #ribbon button:hover {
     transform:scale(1.25) !important;
     z-index:2000;
-    padding:0.5rem;
     background: rgba(230,230,230,0.4);
     backdrop-filter:blur(4px);
   }
