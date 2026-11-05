@@ -32,11 +32,31 @@ const css = `
     background: rgba(230,230,230,0.4);
     backdrop-filter:blur(4px);
   }
+  .pmd-multi-shell {
+  --s: 6em;
+  --d: 0.3em;
+  --bg: #232228;
+  --fg: rgb(90, 92, 102);
+  background-color: var(--bg);
+  background-image: radial-gradient(
+      var(--d) var(--d) at 25% 25%,
+      var(--fg) 100%,
+      transparent 100%
+    ),
+    radial-gradient(
+      var(--d) var(--d) at 75% 75%,
+      var(--fg) 100%,
+      transparent 100%
+    );
+  background-size: var(--s) calc(var(--s) * 0.577350269);
+}
+
 `;
 
 const styleElement = document.createElement('style');
 styleElement.id = 'cardmirror-custom-theme-styles';
 styleElement.textContent = css;
+
 
 document.head.appendChild(styleElement);
 console.log('[CardMirror Custom Theme] Bare JS styles applied successfully.');
