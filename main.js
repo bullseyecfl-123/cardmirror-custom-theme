@@ -23,13 +23,13 @@ const css = `
     border-radius: 1rem !important;
   }
   /* Targeted navbar class */
-  #navbar, nav, .navbar {
+  #ribbon {
     position: relative !important;
     padding-bottom: 24px !important; /* Extra room for the wreath line */
   }
 
   /* Wreath border using a positioned pseudo-element */
-  #navbar::after, nav::after, .navbar::after {
+  #ribbon {
     content: "" !important;
     position: absolute !important;
     bottom: 0 !important;
