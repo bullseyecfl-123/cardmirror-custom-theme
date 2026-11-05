@@ -8,7 +8,8 @@ if (existingStyle) {
 const css = `
   /* Cardmirror main pane styling */
   html body .pmd-pane {
-    padding: 2rem !important;
+    padding: 1.75rem !important;
+    background:none;
   }
 
   /* Chip header styling */
@@ -33,22 +34,13 @@ const css = `
     backdrop-filter:blur(4px);
   }
   .pmd-multi-shell {
-  --s: 6em;
-  --d: 0.3em;
-  --bg: #232228;
-  --fg: rgb(90, 92, 102);
-  background-color: var(--bg);
-  background-image: radial-gradient(
-      var(--d) var(--d) at 25% 25%,
-      var(--fg) 100%,
-      transparent 100%
+  background-image: linear-gradient(
+      90deg,
+      rgba(200, 0, 0, 0.5) 50%,
+      transparent 50%
     ),
-    radial-gradient(
-      var(--d) var(--d) at 75% 75%,
-      var(--fg) 100%,
-      transparent 100%
-    );
-  background-size: var(--s) calc(var(--s) * 0.577350269);
+    linear-gradient(rgba(200, 0, 0, 0.5) 50%, transparent 50%);
+  background-size: 50px 50px;
 }
 
 `;
