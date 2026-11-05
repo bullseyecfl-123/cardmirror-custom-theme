@@ -1,4 +1,4 @@
-class CustomThemePlugin {
+export default class CustomThemePlugin {
   constructor(app) {
     this.app = app;
     this.styleElement = null;
@@ -27,43 +27,24 @@ class CustomThemePlugin {
       }
     `;
 
-    // Remove existing style tag to prevent duplicate injections on hot-reload
     const existingStyle = document.getElementById('cardmirror-custom-theme-styles');
     if (existingStyle) {
-      console.log('[CardMirror Custom Theme] Found existing style tag, removing old instance...');
       existingStyle.remove();
     }
 
-    // Create and inject the new style element
     this.styleElement = document.createElement('style');
     this.styleElement.id = 'cardmirror-custom-theme-styles';
     this.styleElement.textContent = css;
 
     document.head.appendChild(this.styleElement);
-
-    // Verification check in console
-    const injected = document.getElementById('cardmirror-custom-theme-styles');
-    if (injected) {
-      console.log('[CardMirror Custom Theme] Success: <style id="cardmirror-custom-theme-styles"> injected into <head>.');
-    } else {
-      console.error('[CardMirror Custom Theme] Error: Failed to inject style tag into document.head.');
-    }
+    console.log('[CardMirror Custom Theme] Styles successfully injected into <head>.');
   }
 
   onunload() {
     console.log('[CardMirror Custom Theme] Running onunload()...');
     if (this.styleElement) {
       this.styleElement.remove();
-      console.log('[CardMirror Custom Theme] Style element successfully removed from DOM.');
+      console.log('[CardMirror Custom Theme] Style element removed.');
     }
   }
-}
-
-// Universal export check for CommonJS vs Browser globals
-if (typeof module !== 'undefined' && module.exports) {
-  console.log('[CardMirror Custom Theme] Exporting class via module.exports');
-  module.exports = CustomThemePlugin;
-} else {
-  console.log('[CardMirror Custom Theme] Exporting class via window.CustomThemePlugin');
-  window.CustomThemePlugin = CustomThemePlugin;
 }
