@@ -21,6 +21,13 @@ const css = `
   html body #ribbon button,
   html body button#ribbon {
     border-radius: 1rem !important;
+    transform:scale(1);
+    transition:all 0.3s ease;
+    z-index:auto;
+  }
+  html body #ribbon button:hover {
+    transform:scale(1.06);
+    z-index:2000;
   }
   /* Targeted navbar class */
   #ribbon {
