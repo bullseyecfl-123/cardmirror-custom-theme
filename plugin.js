@@ -43,7 +43,13 @@ const css = `
     linear-gradient(rgba(200, 0, 0, 0.5) 50%, transparent 50%);
   background-size: 50px 50px;
 }
-
+.pmd-pill-tray {
+left:0.5rem !important;
+bottom: 1.75rem !important;
+}
+#status-bar {
+  padding: 1rem .75rem !important;
+}
 `;
 
 const styleElement = document.createElement('style');
