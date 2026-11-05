@@ -18,12 +18,13 @@ const css = `
   }
 
   /* Ribbon button overrides */
-  html body #ribbon button,
-  html body button#ribbon {
+  #ribbon button,
+  button#ribbon {
     border-radius: 1rem !important;
-    transform:scale(1);
-    transition:all 0.3s ease;
+    transform:scale(1.2);
+    transition:all 0.3s;
     z-index:auto;
+    
   }
   html body #ribbon button:hover {
     transform:scale(1.06);
