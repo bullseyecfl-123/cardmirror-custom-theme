@@ -64,29 +64,6 @@ font-size:3rem;
 color:white;
 }
 
-.pmd-nav-item {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  position: relative;
-}
-
-.pmd-nav-item:hover {
-  position: absolute;
-  width: max-content !important;
-  max-width: 500px !important;
-  white-space: normal !important;
-  overflow: visible !important;
-  z-index: 9999 !important;
-  background-color: gray;
-
-}
-.pmd-nav-list,
-.pmd-nav-panel,
-.pmd-pane-nav-host {
-  overflow: visible !important;
-  position:relative;
-}
 `;
 
 const styleElement = document.createElement('style');
