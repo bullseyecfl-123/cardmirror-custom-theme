@@ -63,8 +63,11 @@ font-size:3rem;
 .pmd-home-tagline {
 color:white;
 }
- {
-
+.pmd-nav-item:hover {
+position:relative; 
+max-width:500px;
+width:fit-content;
+z-index:50;
 }
 `;
 
