@@ -64,10 +64,11 @@ font-size:3rem;
 color:white;
 }
 .pmd-nav-item:hover {
-position:relative; 
+position:absolute; 
+
 max-width:500px;
 width:fit-content;
-z-index:50;
+z-index:50 !important;
 }
 `;
 
