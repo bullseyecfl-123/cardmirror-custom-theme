@@ -17,6 +17,7 @@ const css = `
   .pmd-pane-chip {
     border-radius: 1rem 1rem 0 0 !important;
     padding: 1rem !important;
+    box-shadow: inset 0 1px 5px rgba(255, 255, 255, 0.7);
   }
   .pmd-pane-footer {
     border-radius: 0 0 1rem 1rem !important;
@@ -24,15 +25,14 @@ const css = `
   }
 
   /* Ribbon button overrides */
-  #ribbon button,
-  button#ribbon {
+  #ribbon button, .ribbon-color-control{
     border-radius: 1rem !important;
     transform:scale(1);
     transition:all 0.3s;
     z-index:auto;
     
   }
-  html body #ribbon button:hover {
+  #ribbon button:hover, .ribbon-color-control:hover {
     transform:scale(1.25) !important;
     z-index:2000;
     background: rgba(230,230,230,0.4);
@@ -62,6 +62,9 @@ font-size:3rem;
 }
 .pmd-home-tagline {
 color:white;
+}
+ {
+
 }
 `;
 
