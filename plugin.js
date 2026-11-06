@@ -62,25 +62,30 @@ font-size:3rem;
 }
 .pmd-home-tagline {
 color:white;
-}/* Allow expanded items to overflow the sidebar horizontally */
-.pmd-nav-list {
-  overflow-x: visible !important;
 }
 
-/* Expand item width and wrap text on hover without breaking vertical layout */
-.pmd-nav-item:hover {
+.pmd-nav-item {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   position: relative;
+}
+
+.pmd-nav-item:hover {
+  position: absolute;
   width: max-content !important;
   max-width: 500px !important;
   white-space: normal !important;
   overflow: visible !important;
-  z-index: 50 !important;
-  background-color: #3b5998; /* Keep blue highlight visible over background */
+  z-index: 9999 !important;
+  background-color: gray;
+
 }
 .pmd-nav-list,
 .pmd-nav-panel,
 .pmd-pane-nav-host {
   overflow: visible !important;
+  position:relative;
 }
 `;
 
