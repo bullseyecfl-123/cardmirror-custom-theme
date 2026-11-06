@@ -63,12 +63,26 @@ font-size:3rem;
 .pmd-home-tagline {
 color:white;
 }
-.pmd-nav-item:hover {
-position:absolute; 
+.pmd-nav-item {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+}
 
-max-width:500px;
-width:fit-content;
-z-index:50 !important;
+.pmd-nav-item:hover {
+  position: absolute;
+  width: max-content !important;
+  max-width: 500px !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  z-index: 9999 !important;
+  background-color: inherit;
+}
+.pmd-nav-list,
+.pmd-nav-panel,
+.pmd-pane-nav-host {
+  overflow: visible !important;
 }
 `;
 
